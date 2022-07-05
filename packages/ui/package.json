@@ -5,8 +5,11 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
+    "dev": "tsc --watch --outDir dist",
+    "build": "tsc --outDir dist",
     "lint": "eslint *.ts*",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^6.5.6",
@@ -14,12 +17,19 @@
     "@storybook/addon-links": "^6.5.6",
     "@storybook/react": "^6.5.6",
     "@storybook/testing-library": "^0.0.11",
-    "storybook": "start-storybook",
+    "@testing-library/react": "^13.2.0",
+    "@types/jest": "^27.5.1",
     "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
+    "@types/react-dom": "^18.0.4",
+    "@types/react-test-renderer": "^18.0.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
-    "react": "^17.0.2",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "start-storybook",
+    "ts-jest": "^28.0.4",
     "tsconfig": "*",
     "typescript": "^4.5.2"
   }
